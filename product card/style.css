@@ -1,0 +1,83 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  cursor: pointer;
+  overflow: hidden;
+  font-family: sans-serif;
+}
+body {
+  min-height: 100vh;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card {
+  width: 600px;
+  display: flex;
+  height: 400px;
+  justify-content: center;
+}
+.thumb {
+  width: 300px;
+  height: 600px;
+  z-index: 1;
+  transition: 0.8s all;
+}
+.desc {
+  width: 300px;
+  height: 400px;
+  background-color: #FFB6C1;
+  transition: 0.8s all;
+  padding-top: 50px;
+  position: absolute;
+}
+.desc h3 {
+  color: white;
+  text-align: center;
+  font-size: 20px;
+}
+.desc .name, .desc .size {
+  font-weight: bold;
+  color: white;
+  font-size: 20px;
+  margin-top: 47px;
+  margin-left: 50px;
+}
+.desc p {
+  margin-left: 50px;
+  width: 206px;
+  font-size: 14px;
+  margin-top: 6px;
+  color: white;
+}
+.other {
+  display: flex;
+  align-items: center;
+  margin-top: 40px;
+}
+.y {
+  margin-left: 46px;
+  margin-right: 30px;
+  color: #fff;
+  font-weight: bold;
+}
+button {
+  width: 120px;
+  height: 40px;
+  border-radius: 5px;
+  background: linear-gradient(90deg, #16d9e3 0%, #30c7ec 57%, #46aef7 100%);
+  color: #fff;
+  outline: none;
+  border: none;
+}
+button:hover {
+  background: linear-gradient(90deg,#2af498 0%, #009efd 100%)
+}
+.card:hover .desc {
+  transform: translateX(150px);
+}
+.card:hover .thumb {
+   transform: translateX(-150px);
+}
